@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: hsl(233, 13%, 49%);
+	height: 100vh;
+	width: 96vw;
+	background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+	background-color: #f6f6fe;
+	background-position: top right, bottom left;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	padding-top: 68px;
+	padding-bottom: 42px;
+}
+
+p {
+	padding: 18px;
+}
+
+hr {
+	border-top: 1px solid hsla(234, 14%, 74%, 0.5);
+	border-bottom: 0;
+	width: 80%;
+	margin: auto;
+}
+
+button {
+	cursor: pointer;
+	width: 260px;
+	height: 42px;
+	font-family: inherit;
+	font-weight: inherit;
+	color: white;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 8px;
+	margin: 32px;
+	background-image: linear-gradient(to right,
+			hsl(236, 72%, 79%),
+			hsl(237, 63%, 64%));
+}
+
+#header {
+	text-align: center;
+}
+
+.toggle-grid {
+	display: grid;
+	width: 280px;
+	margin: auto;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+}
+
+.plan {
+	padding: 0 30px;
+	color: hsl(234, 14%, 74%);
+	align-self: center;
+}
+
+/* TOGGLE SWITCH */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	background-image: linear-gradient(to right,
+			hsl(236, 72%, 79%),
+			hsl(237, 63%, 64%));
+	border-radius: 34px;
+}
+
+/* hide default html checkbox */
+.switch input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: .3s;
+}
+
+.slider::before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	border-radius: 50%;
+	transition: .3s;
+}
+
+.switch input:checked~.slider::before {
+	transform: translateX(26px);
+}
+
+/* CARD CONTAINER */
+.card-grid-container {
+	display: grid;
+	width: 78vw;
+	height: 65vh;
+	margin: auto;
+	margin-top: 14vh;
+	margin-bottom: 200px;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+}
+
+.card {
+	text-align: center;
+	padding-top: 48px;
+}
+
+.price {
+	font-size: 3.5rem;
+	margin: 32px;
+}
+
+.professional {
+	background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	color: #fff;
+	height: 110%;
+	padding-top: 20%;
+	align-self: center;
+	border-radius: 10px;
+}
+
+.basic,
+.master {
+	background-color: #fff;
+	color: hsl(233, 13%, 49%);
+}
+
+.basic .price,
+.master .price {
+	color: hsl(232, 13%, 33%);
+}
+
+.professional button {
+	background-image: none;
+	background-color: #fff;
+	color: hsl(237, 63%, 64%);
+}
+
+.basic {
+	border-radius: 10px 0 0 10px;
+}
+
+.master {
+	border-radius: 0 10px 10px 0;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
