@@ -1,14 +1,18 @@
-# Frontend Mentor - File Transfer pricing component
+## Frontend Mentor - File Transfer pricing component  
 
-https://galialael.github.io/frontend-mentor-pricing-component/
+:raised_hands: done as a live coding demonstration in [she codes;](https://she-codes.org/) web course. :raised_hands:  
 
+See the result it: https://galialael.github.io/frontend-mentor-pricing-component/
 
+***
+<br/><br/>
+ <br/><br/>
+ <br/><br/>
+  
+  
 
+  
 
-
-
-
-![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
